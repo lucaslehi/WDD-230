@@ -6,7 +6,7 @@ console.log(year);
 
 document.querySelector(
   "h3"
-).innerHTML = `&copy 2023 .: | :. Lucas Gomes .: | :. Idaho`;
+).innerHTML = `&copy ${year} .: | :. Lucas Gomes .: | :. Idaho`;
 
 let currentDate = document.lastModified;
 
