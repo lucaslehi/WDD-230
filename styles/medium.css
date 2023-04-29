@@ -1,0 +1,18 @@
+@media screen and (min-width: 32.5em) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  img {
+    max-width: 550px;
+    width: 90%;
+  }
+  h1 {
+    color: green;
+  }
+  .extra-grid {
+    grid-column: 1/3;
+  }
+  footer {
+    grid-column: 1/3;
+  }
+}
