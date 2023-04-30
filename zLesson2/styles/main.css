@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Rowdies&display=swap");
+header {
+  background-color: #03070a;
+  color: white;
+  line-height: 50px;
+  padding: 5px;
+  text-align: center;
+  font-size: larger;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+  min-width: 50px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Instrument Serif", serif;
+}
+
+h3 {
+  background-color: #090a0a;
+  color: white;
+  height: fit-content;
+  padding: 20px;
+  margin-top: -1px;
+  border-radius: 8px;
+  margin: 0;
+}
+
+p {
+  padding: 10px;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  margin: 0;
+}
+
+section {
+  margin: 1em;
+  font-family: Rowdies, sans-serif;
+  text-align: center;
+  border: #0c1f30 3px solid;
+  border-radius: 10px;
+  background-color: rgba(236, 228, 228, 0.598);
+}
+
+h4 {
+  font-family: Rowdies, sans-serif;
+}
+
+img {
+  max-width: 370px;
+  width: 90%;
+  border: black solid 3px;
+}
+
+footer {
+  text-align: center;
+  background-color: #0c1f30;
+  color: white;
+}
