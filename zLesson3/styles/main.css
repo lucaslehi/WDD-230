@@ -17,8 +17,17 @@ header ul {
   justify-content: space-around;
   padding: 1em;
 }
+header li {
+  margin: auto;
+}
 body {
   font-size: large;
+}
+body ul li {
+  font-family: "Instrument Serif", serif;
+  justify-content: center;
+  padding-left: 0.5em;
+  margin-left: 8em;
 }
 h1,
 h2,
@@ -63,4 +72,42 @@ a {
 }
 a:hover {
   color: rgb(201, 223, 75);
+}
+#color1 {
+  background-color: #6fa321;
+}
+#color2 {
+  background-color: #c9df4b;
+}
+#color3 {
+  background-color: #000000;
+  color: aliceblue;
+}
+@media screen and (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  header li {
+    margin: 0.5em 0;
+  }
+  body ul li {
+    margin-left: 0;
+    text-align: center;
+  }
+  img {
+    width: 6em;
+  }
+}
+@media screen and (min-width: 769px) {
+  header ul {
+    justify-content: space-around;
+  }
+  body ul li {
+    justify-content: center;
+    margin-left: 8em;
+  }
+  img {
+    width: 9em;
+  }
 }
