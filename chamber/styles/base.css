@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Maven+Pro:wght@400;600;700&family=Pacifico&display=swap");
+
+body {
+  font-family: "Instrument Serif", serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #6fa321;
+}
+
+img {
+  height: 60px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 0.8em;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#social_media {
+  margin-top: 25px;
+  margin-right: 45px;
+}
+
+#social_media img {
+  height: 20px;
+  margin-left: 5px;
+}
+
+nav button {
+  float: right;
+  margin-top: -41px;
+  background: transparent;
+  border: solid 0.2rem;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+nav {
+  background-color: #6fa321;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+nav ul.open {
+  display: block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2vw;
+  text-decoration: none;
+  background-color: #6fa321;
+  color: #000000;
+  font-size: 0.8rem;
+}
+
+nav ul li a:hover {
+  background-color: #c9df4b;
+  color: #000000;
+}
+
+#hambutton span:nth-child(1) {
+  display: block;
+}
+
+#hambutton span:nth-child(2) {
+  display: none;
+}
+
+#hambutton.open span:nth-child(1) {
+  display: none;
+}
+
+#hambutton.open span:nth-child(2) {
+  display: block;
+}
+
+.time {
+  margin-top: 70px;
+  margin-left: 55px;
+  margin-right: 55px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #081a80;
+  font-size: 1rem;
+  padding: 0.5em;
+}
+
+main {
+  display: grid;
+  height: 700px;
+  gap: 5px;
+  margin: 30px;
+}
+
+.box1 {
+  background-color: #c9df4b;
+}
+
+.box2 {
+  background-color: #c9df4b;
+}
+
+.box3 {
+  background-color: #c9df4b;
+}
+
+.box4 {
+  background-color: #c9df4b;
+}
+
+.box5 {
+  display: grid;
+  background-color: #c9df4b;
+}
+
+.box6 {
+  border: solid 0.1rem;
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.box7 {
+  border: solid 0.1rem;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.box8 {
+  display: none;
+  background-color: #c9df4b;
+}
+
+.box9 {
+  display: none;
+}
+
+footer {
+  background-color: #6fa321;
+  padding-bottom: 5px;
+}
+
+.footerlogo,
+.footerdate,
+.location,
+.contact,
+.map a {
+  text-align: center;
+  color: #000000;
+}
+
+.footerlogo img {
+  height: 100px;
+}
+
+hr.solid {
+  width: 20em;
+  border-top: 0.01rem solid #ffffff;
+}

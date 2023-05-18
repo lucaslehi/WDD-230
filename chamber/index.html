@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brasilia's Chamber of Commerce" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <title>Brasilia's Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="Brasilia's Chamber of Commerce Logo" />
+      <h1>Brasilia Chamber of Commerce</h1>
+      <div id="social_media">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="images/facebook.logo.png" alt="facebook website" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="images/linkedin.logo.png" alt="linkedin website" />
+        </a>
+      </div>
+    </header>
+
+    <nav>
+      <button id="hambutton"><span>&#9776;</span><span>X</span></button>
+      <ul id="NavOne">
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="time">
+      <span id="date"></span>
+    </div>
+    <main>
+      <div class="box1">Hero with site name and call to action</div>
+      <div class="box2">Event</div>
+      <div class="box3">Weather</div>
+      <div class="box4">News Release</div>
+      <div class="box5">
+        <div class="box6">Spotlight 1</div>
+        <div class="box7">Spotlight 2</div>
+        <div class="box9">Spotlight 3</div>
+      </div>
+      <div class="box8">Join</div>
+    </main>
+    <footer>
+      <div class="first">
+        <div class="footerlogo">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+        <div class="location">
+          <h2>Brasilia Chamber of Commerce</h2>
+          <p>CACB - SCS Quadra 03 Bloco A, Ed. CACB</p>
+          <p>Brasilia - Distrito Federal Brazil, 70.313-916</p>
+        </div>
+        <div class="contact">
+          <p>cacb@cacb.org.br</p>
+          <p>+55 61 3321 1311</p>
+          <div class="map">
+            <a
+              href="https://www.google.com/maps/search/CACB+-+SCS+Quadra+03+Bloco+A,+Ed.+CACB+70.313-916+-+Brasilia+-+Distrito+Federal+Brazil/@-15.7887279,-47.8864411,17z/data=!3m1!4b1"
+              target="_blank"
+              >📍Location Map</a
+            >
+          </div>
+        </div>
+      </div>
+      <hr class="solid" />
+      <div id="second">
+        <div class="footerdate">
+          <p>&copy; <span id="year"></span> &nbsp;&nbsp;Brasilia Chamber</p>
+          &nbsp;&nbsp;
+          <p><b>Lucas Gomes</b></p>
+          &nbsp;&nbsp;
+          <p>WDD 230 Project</p>
+        </div>
+        <div class="second">
+          &nbsp;&nbsp;
+          <p>Last Modification: <span id="currentdate"></span></p>
+        </div>
+      </div>
+      <script src="scripts/main.js"></script>
+      <script src="scripts/hambutton.js"></script>
+    </footer>
+  </body>
+</html>
