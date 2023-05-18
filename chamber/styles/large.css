@@ -120,13 +120,13 @@
     width: 60em;
   }
 
-  #second {
+  #two {
     display: flex;
     justify-content: center;
   }
 
   .footerdate,
-  .second {
+  .two {
     font-size: 1.2rem;
   }
 }

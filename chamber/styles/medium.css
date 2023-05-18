@@ -37,7 +37,7 @@
     margin-left: auto;
   }
 
-  .first {
+  .one {
     display: flex;
     justify-content: space-around;
   }
@@ -56,14 +56,14 @@
   }
 
   .footerdate,
-  .second {
+  .two {
     display: flex;
     justify-content: center;
     flex-direction: row;
     font-size: 0.7rem;
   }
 
-  .second {
+  .two {
     color: #000000;
   }
 }
