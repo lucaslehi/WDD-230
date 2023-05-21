@@ -121,6 +121,7 @@ main {
   height: 700px;
   gap: 5px;
   margin: 30px;
+  margin-bottom: 500px;
 }
 
 .box1 {
@@ -143,7 +144,7 @@ main {
   color: white;
   position: absolute;
   right: 35px;
-  top: 450px;
+  top: 400px;
 }
 
 .box2 {
@@ -159,6 +160,28 @@ p {
 
 .box3 {
   background-color: #c9df4b;
+  text-align: center;
+}
+.box3 .weather {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 0.1;
+}
+
+.box3 .emoji {
+  font-size: 3rem;
+}
+.box3 .celcius {
+  font-size: 2rem;
+}
+hr.wsolid {
+  width: 12em;
+}
+.box3 .weatherinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  font-size: 1rem;
 }
 
 .box4 {
@@ -185,6 +208,8 @@ p {
 .box8 {
   display: none;
   background-color: #c9df4b;
+  justify-content: center;
+  align-items: center;
 }
 
 .box9 {

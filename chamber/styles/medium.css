@@ -1,6 +1,12 @@
 @media only screen and (min-width: 520px) {
   .box1 a {
-    margin-top: 18px;
+    margin-top: 90px;
+  }
+  .box3 {
+    grid-column: 1;
+    grid-row: 5;
+    width: 34%;
+    margin-left: auto;
   }
   .box4 {
     grid-row: 2;
@@ -27,7 +33,18 @@
   .box8 {
     display: block;
   }
-
+  .box8 a {
+    border-radius: 0.5rem;
+    background-color: #081a80;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    margin: 10px 10px 10px 90px;
+    padding-inline: 250px;
+  }
+  .box8 p {
+    margin: 60px;
+  }
   .box2 {
     grid-row: 5;
     grid-column: 1;

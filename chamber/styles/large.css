@@ -49,6 +49,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 30px;
   }
 
   .box2 {
@@ -67,7 +68,18 @@
     grid-column: 1;
     grid-row: 3;
   }
-
+  .box8 a {
+    border-radius: 0.5rem;
+    background-color: #081a80;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    margin: 10px 10px 10px 30px;
+    padding-inline: 100px;
+  }
+  .box8 p {
+    margin: 60px;
+  }
   .box1 {
     grid-column: 2;
     grid-row: 1 / 3;
