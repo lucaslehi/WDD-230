@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Progressive Loading of Images</h1>
+    <picture>
+      <img
+        src="https://dummyimage.com/300x400/ccc/fff"
+        data-src="https://placebear.com/300/400"
+      />
+    </picture>
+    <picture>
+      <img
+        src="https://dummyimage.com/300x400/ccc/fff"
+        data-src="https://picsum.photos/300/400"
+      />
+    </picture>
+    <picture>
+      <img
+        src="https://dummyimage.com/300x400/ccc/fff"
+        data-src="http://placekitten.com/300/400"
+      />
+    </picture>
+    <picture>
+      <img
+        src="https://dummyimage.com/300x400/ccc/fff"
+        data-src="https://loremflickr.com/300/400"
+      />
+    </picture>
+    <picture>
+      <img
+        src="https://dummyimage.com/300x400/ccc/fff"
+        data-src="http://placeimg.com/300/400/nature"
+      />
+    </picture>
+    <picture>
+      <img
+        src="https://picsum.photos/id/2/10"
+        data-src="https://picsum.photos/id/2/300/400"
+        alt="comp"
+      />
+    </picture>
+    <script src="main.js"></script>
+  </body>
+</html>
