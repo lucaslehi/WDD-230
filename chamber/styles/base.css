@@ -130,6 +130,11 @@ main {
   grid-template-rows: repeat(3, 1fr);
   background-color: #c9df4b;
 }
+.box1 picture {
+  object-fit: fill;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+}
 .box1 img {
   grid-column: 1 / span 3;
   grid-row: 1 / span 3;

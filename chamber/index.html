@@ -46,9 +46,11 @@
     </section>
     <main>
       <div class="box1">
-        <img src="images/large.jpg" alt="Brasilia" />
-        <source media="(max-width: 520px)" srcset="images/small.jpg" />
-        <source media="(max-width: 1000px)" srcset="images/medium.jpg" />
+        <picture>
+          <source srcset="images/large.jpg" media="(min-width: 850px)" />
+          <source srcset="images/medium.jpg" media="(min-width: 600px)" />
+          <img src="images/small.jpg" alt="Brasilia" />
+        </picture>
         <h2>Welcome to Brasilia</h2>
         <a href="#">Join the Chamber</a>
       </div>
