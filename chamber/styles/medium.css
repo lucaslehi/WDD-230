@@ -96,3 +96,40 @@
     color: #000000;
   }
 }
+
+/* discover page */
+#days {
+  margin-top: -100px !important;
+  margin-bottom: 50px;
+}
+/* picture p {
+  text-align: center;
+  margin-top: -30px;
+  margin-left: 10px;
+  font-size: 15px !important;
+}
+#discover {
+  max-width: 900px !important;
+  flex-wrap: wrap !important;
+  max-height: 1500px;
+} */
+#discover picture img {
+  margin: 50px !important;
+  /* padding-left: 20px; */
+  gap: 5px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  box-shadow: 0 0 50px #080808ad;
+}
+#discover picture img:hover {
+  transform: translate(20px, 20px);
+  transition: 0.5s ease;
+  box-shadow: 0 0 50px #14a1cfad;
+}
+#discover picture img:hover + p {
+  font-weight: bold;
+  font-size: 20px !important;
+  transform: translate(20px, 20px);
+  transition: 0.5s ease;
+}

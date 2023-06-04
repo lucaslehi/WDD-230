@@ -250,3 +250,34 @@ hr.solid {
   width: 20em;
   border-top: 0.01rem solid #ffffff;
 }
+
+/* Discover Page */
+
+#days {
+  text-align: center;
+}
+
+#discover {
+  text-align: center;
+  margin: 0 auto !important;
+  padding: 5px;
+  display: block;
+}
+
+#discover picture img {
+  margin: 0 auto !important;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #6fa321;
+  width: 300px;
+  height: 300px;
+}
+
+#discover div p {
+  font-weight: bold;
+  font-size: 20px;
+}
+#discover footer {
+  height: 100%;
+  min-height: 100%;
+}
