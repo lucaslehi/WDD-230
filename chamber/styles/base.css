@@ -118,7 +118,7 @@ nav ul li a:hover {
 }
 main {
   display: grid;
-  height: 700px;
+  /*height: 700px;*/
   gap: 5px;
   margin: 30px;
   margin-bottom: 550px;

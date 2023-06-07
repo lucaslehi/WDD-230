@@ -163,7 +163,7 @@
   max-width: 1300px !important;
   display: flex;
   flex-wrap: wrap !important;
-  max-height: 1050px !important;
+  /*max-height: 1050px !important;*/
   justify-content: center;
 }
 #days {
