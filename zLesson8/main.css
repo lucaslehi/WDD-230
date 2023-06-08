@@ -1,0 +1,25 @@
+table,
+th,
+td {
+  text-align: center;
+  caption-side: bottom;
+  border: 1px solid green;
+  border-collapse: collapse;
+  padding: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+thead {
+  background-color: #44ca9d;
+}
+thead th:nth-child(1) {
+  background-color: #0a8f5c;
+  font-size: 1.4em;
+}
+tbody tr:nth-of-type(even) {
+  background-color: #aae4d1;
+}
+tbody th,
+tbody td {
+  border: 1px solid #b6b2b2;
+}
