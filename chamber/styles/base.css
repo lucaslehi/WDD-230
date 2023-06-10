@@ -89,7 +89,7 @@ nav ul li a:hover {
 }
 
 .time {
-  margin-top: 70px;
+  margin-top: 30px;
   margin-left: 55px;
   margin-right: 55px;
   text-align: center;
@@ -119,9 +119,10 @@ nav ul li a:hover {
 main {
   display: grid;
   /*height: 700px;*/
+  height: auto;
   gap: 5px;
   margin: 30px;
-  margin-bottom: 550px;
+  margin-bottom: 80px;
 }
 
 .box1 {
@@ -259,13 +260,13 @@ hr.solid {
 
 #discover {
   text-align: center;
-  margin: 0 auto !important;
+  margin: 0 auto;
   padding: 5px;
   display: block;
 }
 
 #discover picture img {
-  margin: 0 auto !important;
+  margin: 0 auto;
   padding: 5px;
   border-radius: 20px;
   box-shadow: 0 0 15px #6fa321;
