@@ -49,91 +49,101 @@
         greet.<span id="close-banner">❎</span>
       </h3>
     </section>
-    <main id="discover">
-      <div>
-        <picture>
-          <img
-            src="https://dummyimage.com/300x300/ccc/fff"
-            data-src="images/airplane.jpg"
-            alt="Brasilia's Airplane Shape"
+    <main id="join">
+      <div class="form-container">
+        <form method="get" action="thankyou.html">
+          <label for="fname">First Name: *</label>
+          <input type="text" name="firstname" id="fname" required />
+
+          <label for="lname">Last Name: *</label>
+          <input type="text" name="lastname" id="lname" required />
+
+          <label for="ptitle">Business Position Title:</label>
+          <input
+            type="text"
+            name="positiontitle"
+            id="ptitle"
+            pattern="[a-zA-Z\s\-]{7,}"
+            title="Please enter a minimum of seven characters, using only letter, hyphens, and spaces."
+            checked
           />
-        </picture>
-        <h2>Brasilia's Airplane Shape</h2>
-        <p>
-          Brasilia was design to have the shape of an airplane being planned and
-          devloped in 1956. Brasilia is home to over 2.5 million people. It has
-          become one of the Unesco's World Heritage due to its architecture.
-        </p>
+
+          <label for="email">E-mail: *</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="name@domain.com"
+            required
+          />
+
+          <label for="phone">Phone: *</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="385-370-3536"
+            required
+          />
+
+          <label for="bname">Business Name/Title: *</label>
+          <input type="text" name="businessname" id="bname" required />
+          <br />
+          <h2>Membership</h2>
+          <div id="radio">
+            <input type="radio" name="mlevel" value="level1" id="one" />
+            <label for="one">NP</label>
+
+            <input type="radio" name="mlevel" value="level2" id="two" />
+            <label for="two">Bronze</label>
+
+            <input type="radio" name="mlevel" value="level3" id="three" />
+            <label for="three">Silver</label>
+
+            <input type="radio" name="mlevel" value="level4" id="four" />
+            <label for="four">Gold</label>
+          </div>
+
+          <label for="message">Business Description</label>
+          <textarea name="instructions" id="message"></textarea>
+
+          <input id="dateToday" type="hidden" name="todaydate" />
+
+          <input type="submit" value="Submit" />
+        </form>
       </div>
 
-      <div>
-        <picture>
-          <img
-            src="https://dummyimage.com/300x300/ccc/fff"
-            data-src="images/Catedral.jpg"
-            alt="Brasilia's Catholic Cathedral"
-          />
-        </picture>
-        <h2>Brasilia's Catholic Cathedral</h2>
-        <p>
-          Design by Oscar Niemeyer as much os Brasilia's architecture. It was
-          completed in 1960 and it's capable of holding 4,000 thousand people.
-        </p>
+      <div class="membership-container">
+        <div class="membership">
+          <h2>Membership levels benefits</h2>
+          <h3>NP Membership</h3>
+          <ul>
+            <li>For non profit organizations and there is no fee</li>
+          </ul>
+          <h3>Bronze Membership</h3>
+          <ul>
+            <li>12% discount on events</li>
+            <li>10% discount on advertising</li>
+            <li>Fee of $40/month</li>
+          </ul>
+          <h3>Silver Membership</h3>
+          <ul>
+            <li>20% discount on events</li>
+            <li>15% discount on advertising</li>
+            <li>1 free featured ad per year</li>
+            <li>Fee of $80/month</li>
+          </ul>
+          <h3>Gold Membership</h3>
+          <ul>
+            <li>40% discount on events</li>
+            <li>40% discount on advertising</li>
+            <li>4 free featured ads per year</li>
+            <li>1 free training per quarter</li>
+            <li>Fee of $200/month</li>
+          </ul>
+        </div>
       </div>
-
-      <div>
-        <picture>
-          <img
-            src="https://dummyimage.com/300x300/ccc/fff"
-            data-src="images/Palacio_da_alvorada.jpg"
-            alt="Brasilia's Alvorada Palace"
-          />
-        </picture>
-        <h2>Brasilia's Alvorada Palace</h2>
-        <p>
-          The Palace was the first government structure built in the capital.
-          The second floor of the building is the residential part of the palace
-          where the president lives.
-        </p>
-      </div>
-
-      <div>
-        <picture>
-          <img
-            src="https://dummyimage.com/300x300/ccc/fff"
-            data-src="images/praca_dos_tres_poderes.jpg"
-            alt="Brasilia's Three Powers Plaza"
-          />
-        </picture>
-        <h2>Brasilia's Three Powers Plaza</h2>
-        <p>
-          The name is derived from the presence of the three branches of
-          government around the plaza: the Executive, represented by the Palácio
-          do Planalto (presidential office); the Legislative represented by the
-          National Congress of Brazil; and the Judiciary, represented by the
-          Supremo Tribunal Federal (Supreme Federal Court).
-        </p>
-      </div>
-
-      <div>
-        <picture>
-          <img
-            src="https://dummyimage.com/300x300/ccc/fff"
-            data-src="images/templo_de_brasilia.jpg"
-            alt="Brasilia's LDS Temple"
-          />
-        </picture>
-        <h2>Brasilia's LDS Temple</h2>
-        <p>
-          More than 1.4 million members of the Church of Jesus Christ of
-          Latter-day Saints live in Brazil, more than any nation in the world
-          other than the United States and Mexico.
-        </p>
-      </div>
-
-      <h2 id="days">Days since last visited: <span id="diff"> </span></h2>
     </main>
-
     <footer>
       <div class="one">
         <div class="footerlogo">
@@ -173,7 +183,7 @@
       <script src="scripts/main.js"></script>
       <script src="scripts/hambutton.js"></script>
       <script src="scripts/banner.js"></script>
-      <script src="scripts/discover.js"></script>
+      <script src="scripts/join.js"></script>
     </footer>
   </body>
 </html>

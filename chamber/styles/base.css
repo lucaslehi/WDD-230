@@ -277,3 +277,126 @@ hr.solid {
   font-weight: bold;
   font-size: 20px;
 }
+
+/* Join Page */
+
+#join {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  padding: 0.75rem;
+  flex-direction: column;
+}
+
+.form-container,
+.membership-container {
+  width: 100%;
+  order: initial;
+}
+
+#joinHeading {
+  text-align: center;
+  color: #6fa321;
+  font-weight: bold;
+  font-size: 3rem;
+  text-shadow: #6fa321 3px 3px;
+}
+
+label,
+input {
+  display: block;
+  font-size: 1.5em;
+}
+
+label {
+  margin: 20px 0 0 0;
+}
+
+input {
+  height: 50px;
+}
+
+input[type="radio"] {
+  height: 20px;
+}
+
+input[type="submit"]:hover {
+  color: white;
+}
+
+form input:required {
+  border-left: red solid 6px;
+}
+
+form input:required:valid {
+  border-left: greenyellow solid 6px;
+}
+
+#ptitle {
+  border-left: red solid 6px;
+}
+
+#ptitle:checked:valid {
+  border-left: greenyellow solid 6px;
+}
+
+#radio {
+  display: grid;
+  grid-template-columns: 60px 100px;
+  padding-top: 15px;
+}
+
+#radio label,
+#radio input {
+  margin: 0;
+}
+
+textarea {
+  height: 150px;
+}
+
+input,
+textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="submit"] {
+  height: 60px;
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #6fa321;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 15%;
+  width: 96%;
+  max-width: 20rem;
+  cursor: pointer;
+}
+
+.membership {
+  font-size: 18px;
+}
+
+.membership h2,
+h3 {
+  color: #6fa321;
+  font-weight: bold;
+}
+
+/* Thank You Page */
+
+#thankyou {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+#thankyou h1 {
+  color: #6fa321;
+  font-size: 4.5rem;
+  padding: 100px;
+}
