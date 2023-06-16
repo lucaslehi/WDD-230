@@ -1,3 +1,6 @@
+const url =
+  "https://github.com/lucaslehi/wdd230/blob/main/chamber/json/data.json";
+
 async function fetchData() {
   const response = await fetch(
     "https://github.com/lucaslehi/wdd230/blob/main/chamber/json/data.json"
