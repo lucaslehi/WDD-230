@@ -81,9 +81,9 @@
   hr.solid {
     width: 29em;
   }
-  footer {
+  /*footer {
     margin-bottom: 20px;
-  }
+  }*/
   .footerdate,
   .two {
     display: flex;
