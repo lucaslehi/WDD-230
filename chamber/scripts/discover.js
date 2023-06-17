@@ -17,7 +17,6 @@ const io = new IntersectionObserver((entries) => {
       preloadImage(entry.target);
       io.unobserve(entry.target);
     }
-    // console.log(entries);
   });
 }, optionsImg);
 
@@ -26,7 +25,6 @@ images.forEach((img) => {
 });
 
 if (localStorage.getItem("lastVisit")) {
-  // If it exists, get the timestamp and display the last visit date and time
   let lastVisit = new Date(parseInt(localStorage.getItem("lastVisit")));
   let messageElement = document.getElementById("diff");
   let daysSinceLastVisit = Math.round(
@@ -34,7 +32,6 @@ if (localStorage.getItem("lastVisit")) {
   );
   messageElement.innerHTML = daysSinceLastVisit;
 } else {
-  // If it doesn't exist, set the timestamp to the current time and display the welcome message
   localStorage.setItem("lastVisit", Date.now().toString());
   let messageElement = document.getElementById("days");
   messageElement.innerHTML = "Welcome!!!";
