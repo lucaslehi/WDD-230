@@ -11,15 +11,15 @@ function calculateWindChill(temperature, windSpeed) {
   }
 }
 
-var temperatureElement = document.querySelector(".temp");
-var windSpeedElement = document.querySelector(".wspeed");
-var windChillElement = document.querySelector(".wchill");
+let temperatureElement = document.querySelector(".temp");
+let windSpeedElement = document.querySelector(".wspeed");
+let windChillElement = document.querySelector(".wchill");
 
-var temperatureText = temperatureElement.textContent;
-var temperature = parseFloat(temperatureText.match(/\d+/)[0]);
-var windSpeedText = windSpeedElement.textContent;
-var windSpeed = parseFloat(windSpeedText.match(/\d+/)[0]);
+let temperatureText = temperatureElement.textContent;
+let temperature = parseFloat(temperatureText.match(/\d+/)[0]);
+let windSpeedText = windSpeedElement.textContent;
+let windSpeed = parseFloat(windSpeedText.match(/\d+/)[0]);
 
-var windChill = calculateWindChill(temperature, windSpeed);
+let windChill = calculateWindChill(temperature, windSpeed);
 
 windChillElement.textContent = "Wind Chill: " + windChill + "°C";
