@@ -2,8 +2,8 @@
 
 body {
   font-family: "Instrument Serif", serif;
-  /*max-width: 1400px;
-  margin: auto;*/
+  max-width: 2000px;
+  margin: auto;
 }
 
 header {
@@ -416,7 +416,7 @@ h3 {
   width: 300px;
   background-color: #6fa321;
   border-radius: 25px;
-  box-shadow: 0 2px 4px green;
+  box-shadow: 0 2px 5px green;
   display: flex;
   flex-direction: column;
   align-items: center;
