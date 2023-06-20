@@ -190,3 +190,11 @@ picture p {
   transition: 0.5s ease;
   box-shadow: 0 0 50px #6fa321;
 }
+
+/* Directory */
+
+#directory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
