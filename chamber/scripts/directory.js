@@ -1,14 +1,10 @@
 async function fetchData() {
-  try {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/lucaslehi/wdd230/main/chamber/json/data.json"
-    );
-    const data = await response.json();
-    return data.business;
-  } catch (error) {
-    console.error("Error fetching data:", error);
-    return [];
-  }
+  const response = await fetch(
+    "https://raw.githubusercontent.com/lucaslehi/wdd230/main/chamber/json/data.json"
+  );
+  const data = await response.json();
+  createTable(data.business);
+  return data.business;
 }
 
 function createCard(business) {
@@ -75,9 +71,9 @@ async function loadCards() {
   });
 }
 
-function createTable(data) {
-  const tableBody = document.querySelector("tbody");
+loadCards();
 
+function createTable(data) {
   data.forEach((business) => {
     let tr = document.createElement("tr");
     let td_name = document.createElement("td");
@@ -85,7 +81,7 @@ function createTable(data) {
     let td_phone = document.createElement("td");
     let td_url = document.createElement("td");
 
-    td_name.textContent = business.name;
+    td_name.textContent = `${business.name}`;
     td_address.textContent = business.address;
     td_phone.textContent = business.phone;
     td_url.textContent = business["web-url"];
@@ -95,31 +91,22 @@ function createTable(data) {
     tr.appendChild(td_phone);
     tr.appendChild(td_url);
 
-    tableBody.appendChild(tr);
+    document.querySelector("table").appendChild(tr);
   });
 }
 
-document.addEventListener("DOMContentLoaded", async function () {
-  const cardsContainer = document.querySelector(".cards");
-  const table = document.querySelector("table");
-  const cardsButton = document.querySelector("#cards");
-  const listButton = document.querySelector("#list");
+const cardsContainer = document.querySelector(".cards");
+const table = document.querySelector("table");
 
-  cardsButton.addEventListener("click", function () {
-    cardsContainer.style.display = "flex";
-    table.style.display = "none";
-  });
+cardsContainer.style.display = "flex";
+table.style.display = "none";
 
-  listButton.addEventListener("click", function () {
-    cardsContainer.style.display = "none";
-    table.style.display = "table";
-  });
-
-  await loadCards();
-
-  const businesses = await fetchData();
-  createTable(businesses);
-
+document.querySelector("#cards").addEventListener("click", function () {
   cardsContainer.style.display = "flex";
   table.style.display = "none";
+});
+
+document.querySelector("#list").addEventListener("click", function () {
+  cardsContainer.style.display = "none";
+  table.style.display = "table";
 });
