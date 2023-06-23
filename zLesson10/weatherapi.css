@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-shadow: 0 0 40px purple;
+  font-size: 2rem;
+  border-bottom: 1px solid rgb(120, 103, 197);
+}
+h2 {
+  color: rgb(212, 28, 236);
+  margin-top: 1rem;
+}
+main {
+  max-width: 600px;
+  margin-left: 2rem;
+}
+p {
+  margin: 1rem 0;
+}
+figcaption {
+  font-size: smaller;
+  color: rgb(212, 28, 236);
+}
+footer {
+  border-top: 1px solid rgb(120, 103, 197);
+  font-size: smaller;
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+  width: 500px;
+  font-weight: 700;
+  text-align: center;
+}
+.page {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+.display {
+  margin: 1rem 0 1rem 0.5rem;
+}
+.box {
+  margin: 1rem 0;
+  border: 1px solid blueviolet;
+  padding: 0.5rem;
+  background-color: beige;
+}
+.codetex {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#events {
+  list-style: none;
+}
+#weather-icon {
+  width: 15%;
+  height: auto;
+}
+#current-temp {
+  font-weight: 700;
+}
