@@ -84,7 +84,12 @@ function createTable(data) {
     td_name.textContent = `${business.name}`;
     td_address.textContent = business.address;
     td_phone.textContent = business.phone;
-    td_url.textContent = business["web-url"];
+
+    const webUrl = document.createElement("a");
+    webUrl.textContent = "Website";
+    webUrl.href = business["web-url"];
+    webUrl.target = "_blank";
+    td_url.appendChild(webUrl);
 
     tr.appendChild(td_name);
     tr.appendChild(td_address);
