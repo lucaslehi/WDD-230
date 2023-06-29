@@ -442,8 +442,16 @@ h3 {
   color: #47f747;
 }
 
-.website-link {
+.card-link:hover {
+  color: #081a80;
+}
+
+.website-link a {
   color: #47f747;
+}
+
+.website-link a:hover {
+  color: #081a80;
 }
 
 table {

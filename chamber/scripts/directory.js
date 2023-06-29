@@ -81,6 +81,7 @@ function createTable(data) {
     let td_phone = document.createElement("td");
     let td_url = document.createElement("td");
 
+    td_url.classList.add("website-link");
     td_name.textContent = `${business.name}`;
     td_address.textContent = business.address;
     td_phone.textContent = business.phone;
