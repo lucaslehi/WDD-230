@@ -38,7 +38,7 @@ function displayResults(weatherData) {
     temperatureValue,
     windSpeedValueFloat
   );
-  windChill.textContent = `Wind Chill: ${windChillValue}°C`;
+  windChill.textContent = `Wind Chill: ${windChillValue} °C`;
 }
 
 function calculateWindChill(temperature, windSpeed) {
