@@ -478,3 +478,69 @@ tr:nth-of-type(odd) {
   padding: 10px;
   font-size: 2em;
 }
+
+/* Contact Page */
+
+#contact h1 {
+  font-size: larger;
+  color: #6fa321;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: medium;
+  text-align: center;
+}
+
+#contact input {
+  display: block;
+  font-size: medium;
+}
+
+#contact label {
+  margin: 20px 0 0 0;
+  font-size: medium;
+  text-align: center;
+}
+
+#contact input {
+  height: 40px;
+}
+
+#contact input[type="submit"]:hover {
+  color: white;
+}
+
+#contact form input:required {
+  border-left: red solid 6px;
+}
+
+#contact form input:required:valid {
+  border-left: greenyellow solid 6px;
+}
+
+#contact input {
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 500px;
+}
+#message {
+  width: 90%;
+}
+#contact input[type="submit"] {
+  height: 60px;
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #6fa321;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  width: 96%;
+  max-width: 20rem;
+  cursor: pointer;
+}
+
+#comment-container h1,
+#comment-container label {
+  text-align: left;
+}
