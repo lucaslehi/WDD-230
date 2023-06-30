@@ -1,4 +1,4 @@
-fetch("data.json")
+fetch("json/data.json")
   .then((response) => response.json())
   .then((chamberMembersData) => {
     const filteredMembers = chamberMembersData.business.filter(
