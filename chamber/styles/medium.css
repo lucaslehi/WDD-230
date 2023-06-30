@@ -35,10 +35,10 @@
     margin-left: 0;
   }
 
-  .box8 {
+  .box9 {
     display: block;
   }
-  .box8 a {
+  .box9 a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +49,7 @@
     color: white;
     margin: 10px 20px;
   }
-  .box8 p {
+  .box9 p {
     margin: 60px;
   }
   .box2 {

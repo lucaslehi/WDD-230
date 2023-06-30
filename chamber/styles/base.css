@@ -219,7 +219,7 @@ hr.wsolid {
   margin-top: 0;
 }
 
-.box8 {
+.box9 {
   display: none;
   background-color: #c9df4b;
   flex-direction: column;
@@ -227,7 +227,7 @@ hr.wsolid {
   align-items: center;
 }
 
-.box9 {
+.box8 {
   display: none;
 }
 
@@ -507,23 +507,12 @@ tr:nth-of-type(odd) {
   height: 40px;
 }
 
-#contact input[type="submit"]:hover {
-  color: white;
-}
-
-#contact form input:required {
-  border-left: red solid 6px;
-}
-
-#contact form input:required:valid {
-  border-left: greenyellow solid 6px;
-}
-
 #contact input {
   margin-bottom: 20px;
   width: 90%;
   max-width: 500px;
 }
+
 #message {
   width: 90%;
 }
