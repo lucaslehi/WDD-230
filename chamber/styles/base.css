@@ -176,6 +176,7 @@ p {
   background-color: #c9df4b;
   text-align: center;
 }
+
 .box3 .weather {
   display: flex;
   justify-content: space-evenly;
