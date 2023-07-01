@@ -211,12 +211,20 @@ hr.wsolid {
   border: solid 0.1rem;
   margin: 10px;
   margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .box7 {
   border: solid 0.1rem;
   margin: 10px;
   margin-top: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .box9 {
@@ -229,6 +237,9 @@ hr.wsolid {
 
 .box8 {
   display: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
