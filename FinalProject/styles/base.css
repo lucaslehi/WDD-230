@@ -142,7 +142,7 @@ footer {
 
 /* Style for the "location" section */
 .location {
-  margin-right: auto; /* Push the "location" section to the left */
+  margin-right: auto;
 }
 
 .footerlogo img {
@@ -163,7 +163,7 @@ footer {
 
 /* Style for the "contact" section */
 .contact {
-  margin-left: auto; /* Push the "contact" section to the right */
+  margin-left: auto;
 }
 
 .contact p {
@@ -204,4 +204,11 @@ hr.solid {
 
 #currentdate {
   font-weight: bold;
+}
+
+/* Add the following styles to center the .footerdate div */
+.footerdate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
