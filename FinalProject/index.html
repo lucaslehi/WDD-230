@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <title>Bountiful Foods</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="images/logo2.jpg" alt="Bountiful Foods Logo" />
+      </a>
+      <h1>Bountiful Foods</h1>
+      <div id="social_media">
+        <a href="https://www.facebook.com/" target="">
+          <img src="images/facebook.logo.png" alt="facebook website" />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="images/linkedin.logo.png" alt="linkedin website" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="images/instagram.logo.png" alt="instagram website" />
+        </a>
+      </div>
+    </header>
+    <nav>
+      <ul id="NavOne">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Fresh</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="home1">
+      <img src="images/home1.jpg" alt="homepagefruit" />
+      <a href="#">Make Your Drink</a>
+    </div>
+    <main>
+      <div id="box1">
+        <div id="weatherCard" class="card">
+          <h2>Weather in Carlsbad</h2>
+          <div id="currentWeather">
+            <p>Loading...</p>
+          </div>
+          <div id="forecast">
+            <p>Loading...</p>
+          </div>
+        </div>
+      </div>
+      <div id="box2">
+        <h3>Mix Your Own Drinks</h3>
+        <img src="images/home2.jpg" alt="mixdrink" />
+        <p>Text about drinks here</p>
+        <h3 id="mixedDrinks">Local Storage...</h3>
+        <input id="myBtn" type="submit" value="Order Your Drink" />
+      </div>
+      <div id="box3">
+        <h3>Treasure Island Beach, Orange County</h3>
+        <img src="images/home3.JPG" alt="costalpicture" />
+        <p>
+          The water at Treasure Island Beach has a sandy, rock-free bottom,
+          making it a prime spot for swimming. This cove becomes Aliso Beach
+          Park at the south end, but stick to the north side if you want a
+          little more peace and quiet plus some epic scenery created by the
+          towering palm-topped cliffs that surround it. When you work up an
+          appetite, head up to the Mosaic Bar and Grille, part of the Montage
+          Laguna Beach, which co-manages the beach with the city. Order a Mai
+          Tai and the poke bowl to have on the ocean-facing patio.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="one">
+        <div class="footerlogo">
+          <img src="images/logo2.jpg" alt="logo" />
+        </div>
+        <div class="location">
+          <h2>Bountiful Foods</h2>
+          <p>Carlsbad, CA</p>
+        </div>
+        <div class="contact">
+          <p>www.bountifulfoods.com</p>
+          <p>+1 301 543-0987</p>
+          <div class="map">
+            <a
+              href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1214924,-117.3702033,12z/data=!3m1!4b1!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu"
+              target="_blank"
+              >📍Location Map</a
+            >
+          </div>
+        </div>
+      </div>
+      <hr class="solid" />
+      <div id="two">
+        <div class="footerdate">
+          <p>&copy; <span id="year"></span> Bountiful Foods</p>
+          <p><b>Lucas Gomes</b></p>
+          <p>WDD 230 Final Project</p>
+        </div>
+        <div class="two">
+          <p>Last Modification: <span id="currentdate"></span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/lastmodified.js"></script>
+  </body>
+</html>
