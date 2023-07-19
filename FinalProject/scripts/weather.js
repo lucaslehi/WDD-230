@@ -94,7 +94,6 @@ function displayForecast(data) {
   ];
 
   for (let i = 1; i <= 3; i++) {
-    const date = new Date(data.list[i].dt * 1000);
     const dayIndex = (today + i) % 7; // Correctly calculates the next three days
     const day = days[dayIndex];
 

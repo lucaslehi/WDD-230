@@ -13,7 +13,7 @@
       </a>
       <h1>Bountiful Foods</h1>
       <div id="social_media">
-        <a href="https://www.facebook.com/" target="">
+        <a href="https://www.facebook.com/" target="_blank">
           <img src="images/facebook.logo.png" alt="facebook website" />
         </a>
         <a href="https://www.linkedin.com" target="_blank">
@@ -34,64 +34,64 @@
     <div class="home1">
       <img src="images/home1.jpg" alt="homepagefruit" />
     </div>
-    <main>
-      <main id="fresh">
-        <h1 id="orderDrink">Order Your Drink!</h1>
-        <div id="container-form">
-          <form method="get" onsubmit="order(event)">
-            <label for="name">First Name *:</label>
-            <input type="text" name="name" id="name" required />
 
-            <label for="email">E-mail *:</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="   name@domain.com"
-              required
-            />
+    <main id="fresh">
+      <h1 id="orderDrink">Order Your Drink!</h1>
+      <div id="container-form">
+        <form method="get" onsubmit="order(event)">
+          <label for="name">First Name *:</label>
+          <input type="text" name="name" id="name" required />
 
-            <label for="phone">Phone Number *:</label>
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="   385-370-3536"
-              required
-            />
+          <label for="email">E-mail *:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="   name@domain.com"
+            required
+          />
 
-            <label id="member">Select the fruits for your Drink: </label>
+          <label for="phone">Phone Number *:</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="   385-370-3536"
+            required
+          />
 
-            <div id="checkbox">
-              <label id="fruit1">
-                <input type="checkbox" name="box" value="label" />
-                <span class="fruit"></span>
-              </label>
-              <br />
-              <label id="fruit2">
-                <input type="checkbox" name="box" value="label" />
-                <span class="fruit"></span>
-              </label>
-              <br />
-              <label id="fruit3">
-                <input type="checkbox" name="box" value="label" />
-                <span class="fruit"></span>
-              </label>
-            </div>
+          <label id="member">Select the fruits for your Drink: </label>
 
-            <label for="message">Special Instructions</label>
-            <textarea name="description" id="message"></textarea>
+          <div id="checkbox">
+            <label id="fruit1">
+              <input type="checkbox" name="box" value="label" />
+              <span class="fruit"></span>
+            </label>
+            <br />
+            <label id="fruit2">
+              <input type="checkbox" name="box" value="label" />
+              <span class="fruit"></span>
+            </label>
+            <br />
+            <label id="fruit3">
+              <input type="checkbox" name="box" value="label" />
+              <span class="fruit"></span>
+            </label>
+          </div>
 
-            <input id="dateToday" type="hidden" name="todaydate" class="date" />
+          <label for="message">Special Instructions</label>
+          <textarea name="description" id="message"></textarea>
 
-            <input id="myBtn" type="submit" value="Order Your Drink!" />
-          </form>
-        </div>
-        <br />
+          <input id="dateToday" type="hidden" name="todaydate" class="date" />
 
-        <div class="summary"></div>
-      </main>
+          <input id="myBtn" type="submit" value="Order Your Drink!" />
+        </form>
+      </div>
+      <br />
+
+      <div class="summary"></div>
     </main>
+
     <footer>
       <div class="one">
         <div class="footerlogo">
