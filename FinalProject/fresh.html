@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
-    <title>Bountiful Foods</title>
+    <title>Document</title>
   </head>
   <body>
     <header>
@@ -15,7 +13,7 @@
       </a>
       <h1>Bountiful Foods</h1>
       <div id="social_media">
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.facebook.com/" target="">
           <img src="images/facebook.logo.png" alt="facebook website" />
         </a>
         <a href="https://www.linkedin.com" target="_blank">
@@ -35,50 +33,64 @@
     </nav>
     <div class="home1">
       <img src="images/home1.jpg" alt="homepagefruit" />
-      <a href="fresh.html">Make Your Drink</a>
     </div>
     <main>
-      <div id="box1">
-        <div id="weatherCard" class="card">
-          <h2>Carlsbad Weather</h2>
-          <div id="currentWeather">
-            <p>Loading...</p>
-          </div>
-          <div id="forecast">
-            <p>Loading...</p>
-          </div>
+      <main id="fresh">
+        <h1 id="orderDrink">Order Your Drink!</h1>
+        <div id="container-form">
+          <form method="get" onsubmit="order(event)">
+            <label for="name">First Name *:</label>
+            <input type="text" name="name" id="name" required />
+
+            <label for="email">E-mail *:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="   name@domain.com"
+              required
+            />
+
+            <label for="phone">Phone Number *:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="   385-370-3536"
+              required
+            />
+
+            <label id="member">Select the fruits for your Drink: </label>
+
+            <div id="checkbox">
+              <label id="fruit1">
+                <input type="checkbox" name="box" value="label" />
+                <span class="fruit"></span>
+              </label>
+              <br />
+              <label id="fruit2">
+                <input type="checkbox" name="box" value="label" />
+                <span class="fruit"></span>
+              </label>
+              <br />
+              <label id="fruit3">
+                <input type="checkbox" name="box" value="label" />
+                <span class="fruit"></span>
+              </label>
+            </div>
+
+            <label for="message">Special Instructions</label>
+            <textarea name="description" id="message"></textarea>
+
+            <input id="dateToday" type="hidden" name="todaydate" class="date" />
+
+            <input id="myBtn" type="submit" value="Order Your Drink!" />
+          </form>
         </div>
-      </div>
-      <div id="box2">
-        <h3>Mix Your Own Drinks</h3>
-        <img src="images/home2.jpg" alt="mixdrink" />
-        <p>
-          Fresh fruit drinks are a delicious and refreshing way to quench your
-          thirst on a hot day, while offering a healthier alternative to sugary
-          sodas and artificial beverages. Packed with vitamins, minerals, and
-          natural sweetness, these vibrant drinks come in a variety of flavors,
-          from zesty citrus blends to tropical fruit medleys, catering to every
-          taste preference. Whether enjoyed on their own or used as a base for
-          creative smoothies, fresh fruit drinks provide a tasty and nutritious
-          way to stay hydrated and energized.
-        </p>
-        <h3 id="mixedDrinks">Local Storage...</h3>
-        <input id="myBtn" type="submit" value="Order Your Drink" />
-      </div>
-      <div id="box3">
-        <h3>Treasure Island Beach, Orange County</h3>
-        <img src="images/home3.JPG" alt="costalpicture" />
-        <p>
-          The water at Treasure Island Beach has a sandy, rock-free bottom,
-          making it a prime spot for swimming. This cove becomes Aliso Beach
-          Park at the south end, but stick to the north side if you want a
-          little more peace and quiet plus some epic scenery created by the
-          towering palm-topped cliffs that surround it. When you work up an
-          appetite, head up to the Mosaic Bar and Grille, part of the Montage
-          Laguna Beach, which co-manages the beach with the city. Order a Mai
-          Tai and the poke bowl to have on the ocean-facing patio.
-        </p>
-      </div>
+        <br />
+
+        <div class="summary"></div>
+      </main>
     </main>
     <footer>
       <div class="one">
@@ -113,8 +125,7 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/weather.js"></script>
     <script src="scripts/lastmodified.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/fresh.js"></script>
   </body>
 </html>

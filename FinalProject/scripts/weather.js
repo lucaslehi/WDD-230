@@ -103,7 +103,7 @@ function displayForecast(data) {
     const condition = data.list[i].weather[0].main;
     const emoji = getEmojiForCondition(condition);
 
-    forecast.innerHTML += `<p>${emoji} ${day}: ${temp} °C, ${description}</p>`;
+    forecast.innerHTML += `<p>${emoji} ${day}: ${temp} °F, ${description}</p>`;
   }
 }
 
