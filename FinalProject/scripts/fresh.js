@@ -12,7 +12,7 @@ const populateSelectElements = (fruits) => {
       const option = document.createElement("option");
       option.text = fruit.name;
       option.value = fruit.name;
-      selectElement.appendChild(option); // Append the option to the <select> element
+      selectElement.appendChild(option);
     });
   }
 };
@@ -38,7 +38,7 @@ const getRandomFruit = async () => {
     ]);
   }
 
-  populateSelectElements(data); // Call the function to populate select elements
+  populateSelectElements(data);
 
   console.log(randomFruits);
 

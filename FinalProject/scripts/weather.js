@@ -15,7 +15,6 @@ async function fetchWeatherData() {
   }
 }
 
-// Function to display current weather data on the weather card
 function displayCurrentWeather(data) {
   const currentWeather = document.getElementById("currentWeather");
   const condition = data.weather[0].main;
@@ -29,7 +28,6 @@ function displayCurrentWeather(data) {
     `;
 }
 
-// Function to fetch 3-day forecast data from OpenWeatherMap API
 async function fetchForecastData() {
   //const apiKey = "963d7f32a03636a9a8839c3dfd68cca5"; // Replace 'YOUR_API_KEY' with your actual API key
   //const city = "Carlsbad";
@@ -47,7 +45,6 @@ async function fetchForecastData() {
   }
 }
 
-// Function to map weather conditions to emojis
 function getEmojiForCondition(condition) {
   const emojiMap = {
     Clear: "☀️",
@@ -70,14 +67,12 @@ function getEmojiForCondition(condition) {
   return emojiMap[condition] || "❓";
 }
 
-// Function to get the day of the week in local time
 function getLocalDay(timestamp) {
   const date = new Date(timestamp * 1000);
   const options = { weekday: "long" };
   return date.toLocaleDateString("en-US", options);
 }
 
-// Function to display 3-day forecast on the weather card
 function displayForecast(data) {
   const forecast = document.getElementById("forecast");
   forecast.innerHTML = "<h3>3-Day Forecast</h3>";
@@ -94,7 +89,7 @@ function displayForecast(data) {
   ];
 
   for (let i = 1; i <= 3; i++) {
-    const dayIndex = (today + i) % 7; // Correctly calculates the next three days
+    const dayIndex = (today + i) % 7;
     const day = days[dayIndex];
 
     const temp = Math.round(data.list[i].main.temp);
@@ -106,7 +101,6 @@ function displayForecast(data) {
   }
 }
 
-// Main function to fetch and display weather data
 async function getWeatherData() {
   const currentWeatherData = await fetchWeatherData();
   displayCurrentWeather(currentWeatherData);
